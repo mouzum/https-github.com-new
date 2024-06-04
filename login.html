@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- toastify css  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+</head>
+
+<body class="min-vh-100 d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-5 shadow p-4">
+                <div id="login" class="form-container mt-5">
+                    <h2 class="text-center">Login</h2>
+                    <form onsubmit="handleLogin()">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="text" id="login-email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                </div>
+                                <input type="password" id="login-password" class="form-control" placeholder="Password"
+                                    required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        <p class="text-center mt-3">don't have acount? <a href="../index.html">register</a> here</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- toastify js  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- custom js  -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
